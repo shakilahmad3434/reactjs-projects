@@ -1,0 +1,246 @@
+[
+    {
+        "id": "1",
+        "tags" : [
+
+        ],
+        "mImage" : "22.1a.webp",
+        "highImage" : "22.1b.webp",
+        "title" : "Strappy crop top",
+        "price" : "6.00",
+        "colors" : [
+            {
+                "colorCode" : "#ffffff",
+                "colorName" : "white"
+            },
+            {
+                "colorCode" : "#000000",
+                "colorName" : "black"
+            },
+            {
+                "colorCode" : "#f2d2a9",
+                "colorName" : "sand"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            }
+        ],
+        "mImage" : "2.1a.webp",
+        "highImage" : "2.1b.webp",
+        "title" : "Flat sandals with ankle strap",
+        "price" : "19.90",
+        "discountPrice" : "28.00",
+        "colors" : [
+            {
+                "colorCode" : "#000",
+                "colorName" : "black"
+            },
+            {
+                "colorCode" : "#eeeeef",
+                "colorName" : "Silver"
+            },
+            {
+                "colorCode" : "#f2d2a9",
+                "colorName" : "sand"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "tags" : [
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "7.1a.webp",
+        "highImage" : "7.1b.webp",
+        "title" : "Printed tank top",
+        "price" : "9.90",
+        "colors" : [
+            {
+                "colorCode" : "#ffffff",
+                "colorName" : "white"
+            },
+            {
+                "colorCode" : "#000",
+                "colorName" : "black"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            },
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "14.1a.webp",
+        "highImage" : "14.1b.webp",
+        "title" : "Cotton cargo Bermuda shorts",
+        "price" : "20.00",
+        "colors" : [
+            {
+                "colorCode" : "#000",
+                "colorName" : "black"
+            },
+            {
+                "colorCode" : "#fff",
+                "colorName" : "white"
+            },
+            {
+                "colorCode" : "#e0e0e0",
+                "colorName" : "grey"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            },
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "6.1a.webp",
+        "highImage" : "6.1b.webp",
+        "title" : "Rustic strappy crop top with",
+        "price" : "15.90",
+        "colors" : [
+            {
+                "colorCode" : "#ebe6db",
+                "colorName" : "beige"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "tags" : [],
+        "mImage" : "9.1a.jpg",
+        "highImage" : "9.1b.webp",
+        "title" : "Mini dress with ruffled straps",
+        "price" : "14.90",
+        "colors" : [
+            {
+                "colorCode" : "#b3b4b6",
+                "colorName" : "floral"
+            },
+            {
+                "colorCode" : "#fff",
+                "colorName" : "white"
+            },
+            {
+                "colorCode" : "#000",
+                "colorName" : "black"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            },
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "11.1a.webp",
+        "highImage" : "11.1b.webp",
+        "title" : "Contrast trainers with mesh",
+        "price" : "29.90",
+        "colors" : [
+            {
+                "colorCode" : "#f2d2a9",
+                "colorName" : "sand"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "tags" : [
+
+        ],
+        "mImage" : "4.1a.webp",
+        "highImage" : "4.1b.webp",
+        "title" : "Linen blend waistcoat",
+        "price" : "13.90",
+        "colors" : [
+            {
+                "colorCode" : "#836953",
+                "colorName" : "brown"
+            },
+            {
+                "colorCode" : "#fff",
+                "colorName" : "white"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            },
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "13.1a.webp",
+        "highImage" : "13.1b.webp",
+        "title" : "Denim bag with fringing",
+        "price" : "23.00",
+        "colors" : [
+            {
+                "colorCode" : "#8db4d2",
+                "colorName" : "blue"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "tags" : [
+            {
+                "tagName" : "New",
+                "tagColor" : "bg-emerald-600"
+            },
+            {
+                "tagName" : "On Sale",
+                "tagColor" : "bg-red-500"
+            }
+        ],
+        "mImage" : "18.1a.webp",
+        "highImage" : "18.1b.webp",
+        "title" : "Striped knit bandeau crop top",
+        "price" : "9.99",
+        "colors" : [
+            {
+                "colorCode" : "#063e66",
+                "colorName" : "dark blue"
+            },
+            {
+                "colorCode" : "#f1f2e2",
+                "colorName" : "cream"
+            }
+        ]
+    }
+]
