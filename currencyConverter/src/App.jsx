@@ -24,10 +24,11 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="relative w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2014/10/23/10/10/dollars-499481_1280.jpg')` }}
     >
-      <div className="w-full">
+      <div className="w-full h-screen z-10 absolute top-0 left-0 inset-0 bg-black/50">
+      <div className="w-full h-screen flex justify-center items-center">
         <div className="w-full max-w-md mx-auto border border-gray-600 rounded-lg p-5 backdrop-blur-sm bg-black/50">
           <form
             onSubmit={(e) => {
@@ -72,6 +73,7 @@ function App() {
             </button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );
