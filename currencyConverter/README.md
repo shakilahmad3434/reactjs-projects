@@ -20,24 +20,6 @@ The **Currency Converter App** is a real-time currency exchange tool built with 
 - **CSS (Tailwind/Styled Components)** – Enhances UI/UX design.
 - **Axios/Fetch API** – Handles API requests efficiently.
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/currency-converter.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd currency-converter
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the application:
-   ```sh
-   npm start
-   ```
-
 ## Usage
 1. Select base and target currencies.
 2. Enter the amount to convert.
