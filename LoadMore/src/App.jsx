@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Pokédex</h1>
+      <h1 className="text-4xl mb-10">Loading More Features</h1>
       <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
         {pokemonList.map((pokemon, index) => (
           <PokemonCard key={index} pokemon={pokemon} />

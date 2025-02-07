@@ -4,16 +4,7 @@ const PokemonCard = ({ pokemon }) => {
   const { name, id, sprites, types } = pokemon;
 
   return (
-    <div
-      style={{
-        width: "200px",
-        margin: "10px",
-        padding: "15px",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        textAlign: "center",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-      }}
+    <div className="flex flex-col justify-center items-center gap-2 w-[200px] m-[10px] p-[15px] border rounded text-center shadow-md hover:shodow-xl"
     >
       <img
         src={sprites.front_default}
