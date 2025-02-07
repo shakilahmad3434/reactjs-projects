@@ -44,7 +44,7 @@ const HolidayForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-teal-100 pt-10">
+    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-teal-100 pt-10 pb-10">
       <div className="px-4 sm:px-10 md:px-32 lg:px-48 xl:px-96 mb-10">
         <form
           onSubmit={handleSubmit}

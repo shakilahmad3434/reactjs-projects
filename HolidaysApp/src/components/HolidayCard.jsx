@@ -9,8 +9,8 @@ const HolidayCard = ({ holidays }) => {
                 holidays && holidays.length > 0 ?
                     holidays.map((c, index) => (
                         <div className="rounded-lg bg-white p-4" key={index}>
-                            <h2 className='text-center text-xl font-semibold'>{c.name}</h2>
-                            <p className='text-center'><i className="ri-calendar-line"></i> {new Date(2000, c.date.datetime.month - 1, 1).toLocaleString('default', { month: 'long' })} {c.date.datetime.day} {c.date.datetime.year}</p>
+                            <h2 className=' text-xl font-semibold'>{c.name}</h2>
+                            <p><i className="ri-calendar-line"></i> {new Date(2000, c.date.datetime.month - 1, 1).toLocaleString('default', { month: 'long' })} {c.date.datetime.day} {c.date.datetime.year}</p>
                             <span className='mt-5 block text-md'>{c.description}</span>
                         </div>
                     ))
