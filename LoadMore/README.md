@@ -1,8 +1,28 @@
-# React + Vite
+# Load More Products App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that implements a "Load More" functionality to display additional products dynamically.
 
-Currently, two official plugins are available:
+![Load More Project Preview](./public/homepage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Displays a list of products with an option to load more.
+- Efficient rendering for better performance.
+- Uses React state management.
+- Responsive and user-friendly UI.
+
+## Technologies Used
+
+- React.js
+- CSS & Tailwind CSS
+
+## Usage
+
+1. The initial set of products is displayed on load.
+2. Click the **Load More** button to fetch and display additional products.
+3. The button hides when all products are loaded.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
