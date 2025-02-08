@@ -38,8 +38,8 @@ const DragDrop = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-slate-900 to-rose-300 h-screen w-full flex flex-col justify-center items-center gap-10">
-        <h1 className="text-5xl font-bold text-white">Drag and Drop Todo List</h1>
+    <div className="bg-gradient-to-r from-slate-900 to-rose-300 h-screen px-8 w-full flex flex-col justify-center items-center gap-10">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white">Drag and Drop Todo List</h1>
       <div className="bg-slate-200 rounded-lg p-8 shadow-md xl:min-w-2xl flex flex-col gap-5">
         <div className="flex mb-10">
           <input
@@ -59,7 +59,7 @@ const DragDrop = () => {
         {
             todos.length > 0 || inProgress.length > 0 || done.length > 0
             ?
-        <div className="flex justify-between gap-5">
+        <div className="flex flex-col md:flex-row justify-between gap-5">
           {/* TODO Section */}
           <div
             className="border border-white rounded-md p-3"
@@ -91,7 +91,7 @@ const DragDrop = () => {
             <ul className="w-full">
               {inProgress.map((task, index) => (
                 <li
-                  className="p-2 bg-yellow-400 rounded-sm text-xl mb-2 cursor-pointer"
+                  className="p-2 bg-yellow-400 rounded-sm text-xl mb-2 cursor-move"
                   draggable
                   onDragStart={(event) =>
                     handleDragStart(event, task, "inProgress")
@@ -114,7 +114,7 @@ const DragDrop = () => {
             <ul className="w-full">
               {done.map((task, index) => (
                 <li
-                  className="p-2 bg-green-400 rounded-sm text-xl mb-2 cursor-pointer"
+                  className="p-2 bg-green-400 rounded-sm text-xl mb-2 cursor-move"
                   draggable
                   onDragStart={(event) => handleDragStart(event, task, "done")}
                   key={index}
