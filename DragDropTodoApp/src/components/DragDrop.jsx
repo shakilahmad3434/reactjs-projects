@@ -38,26 +38,27 @@ const DragDrop = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-slate-900 to-gray-300 h-screen w-full flex justify-center items-center">
-      <div className="bg-slate-800 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 p-8 shadow-md flex flex-col gap-5">
-        <h1 className="text-4xl font-bold text-slate-900">
-          Drag and Drop Todo List
-        </h1>
+    <div className="bg-gradient-to-r from-slate-900 to-rose-300 h-screen w-full flex flex-col justify-center items-center gap-10">
+        <h1 className="text-5xl font-bold text-white">Drag and Drop Todo List</h1>
+      <div className="bg-slate-200 rounded-lg p-8 shadow-md xl:min-w-2xl flex flex-col gap-5">
         <div className="flex mb-10">
           <input
             type="text"
             value={taskInput}
-            className="w-2/3"
+            className="w-2/3 border border-gray-500 rounded-l-lg"
             onChange={(e) => setTaskInput(e.target.value)}
           />
           <button
-            className="bg-gray-400 py-2 px-4 rounded-sm w-2/6"
+            className="bg-rose-400 text-white font-semibold cursor-pointer py-2 px-4 rounded-r-lg w-2/6 hover:scale-105 transition"
             onClick={addTask}
           >
             Add Task
           </button>
         </div>
 
+        {
+            todos.length > 0
+            ?
         <div className="flex justify-between gap-5">
           {/* TODO Section */}
           <div
@@ -124,6 +125,9 @@ const DragDrop = () => {
             </ul>
           </div>
         </div>
+         :
+         <p className="text-center font-semibold text-xl">Todo Item Not Found</p>
+        }
       </div>
     </div>
   );
