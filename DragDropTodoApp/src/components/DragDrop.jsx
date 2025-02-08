@@ -45,7 +45,7 @@ const DragDrop = () => {
           <input
             type="text"
             value={taskInput}
-            className="w-2/3 border border-gray-500 rounded-l-lg"
+            className="w-2/3 border border-gray-500 rounded-l-lg pl-2"
             onChange={(e) => setTaskInput(e.target.value)}
           />
           <button
@@ -57,7 +57,7 @@ const DragDrop = () => {
         </div>
 
         {
-            todos.length > 0
+            todos.length > 0 || inProgress.length > 0 || done.length > 0
             ?
         <div className="flex justify-between gap-5">
           {/* TODO Section */}
@@ -70,7 +70,7 @@ const DragDrop = () => {
             <ul className="w-full">
               {todos.map((todo, index) => (
                 <li
-                  className="p-2 bg-gray-400 rounded-sm text-xl mb-2 cursor-pointer"
+                  className="p-2 bg-gray-400 rounded-sm text-xl mb-2 cursor-move"
                   draggable
                   onDragStart={(event) => handleDragStart(event, todo, "todos")}
                   key={index}
@@ -126,7 +126,7 @@ const DragDrop = () => {
           </div>
         </div>
          :
-         <p className="text-center font-semibold text-xl">Todo Item Not Found</p>
+         <p className="text-center font-semibold text-xl">Your to-do list is waiting! Add a task and get started. 💡</p>
         }
       </div>
     </div>
