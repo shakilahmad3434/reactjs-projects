@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const Slider = ({maxPrice}) => {
-  const [priceGap, setPriceGap] = useState(5);
+  const [priceGap, setPriceGap] = useState(1);
   const [minRangeInput, setMinRangeInput] = useState(0);
-  const [maxRangeInput, setMaxRangeInput] = useState(10000);
+  const [maxRangeInput, setMaxRangeInput] = useState(maxPrice);
 
   const minSlider = useRef();
   const maxSlider = useRef();
@@ -21,10 +21,10 @@ const Slider = ({maxPrice}) => {
 
     // Update progress bar position
     if (range.current) {
-      range.current.style.left = `${(minRangeInput / 10000) * 100}%`;
-      range.current.style.width = `${((maxRangeInput - minRangeInput) / 10000) * 100}%`;
+      range.current.style.left = `${(minRangeInput / maxPrice) * 100}%`;
+      range.current.style.width = `${((maxRangeInput - minRangeInput) / maxPrice) * 100}%`;
     }
-  }, [minRangeInput, maxRangeInput]);
+  }, [minRangeInput, maxRangeInput, maxPrice]);
 
   return (
     <div className="w-full h-screen bg-gray-200 flex justify-center items-center">
@@ -86,8 +86,8 @@ const Slider = ({maxPrice}) => {
             type="range"
             className="range-min"
             min="0"
-            max="10000"
-            step="100"
+            max={maxPrice}
+            step="1"
             ref={minSlider}
             value={minRangeInput}
             onChange={(e) => {
@@ -99,8 +99,8 @@ const Slider = ({maxPrice}) => {
             type="range"
             className="range-max"
             min="0"
-            max="10000"
-            step="100"
+            max={maxPrice}
+            step="1"
             ref={maxSlider}
             value={maxRangeInput}
             onChange={(e) => {
