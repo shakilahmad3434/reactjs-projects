@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Slider = () => {
-  const [priceGap, setPriceGap] = useState(500);
+const Slider = ({maxPrice}) => {
+  const [priceGap, setPriceGap] = useState(5);
   const [minRangeInput, setMinRangeInput] = useState(0);
   const [maxRangeInput, setMaxRangeInput] = useState(10000);
 
@@ -28,7 +28,7 @@ const Slider = () => {
 
   return (
     <div className="w-full h-screen bg-gray-200 flex justify-center items-center">
-      <div className="min-w-xl bg-slate-900 rounded-md shadow p-5">
+      <div className="sm:min-w-xl bg-slate-900 rounded-md shadow p-5">
         {/* Header */}
         <div className="mb-10">
           <h1 className="text-4xl text-white text-center mb-3 font-bold">
