@@ -76,3 +76,5 @@
       rating: 4.3
     }
   ];
+
+  export const categories = [...new Set(jokes.map(joke => joke.category))];

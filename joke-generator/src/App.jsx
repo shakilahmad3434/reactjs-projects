@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Sun, Moon, RefreshCw } from 'lucide-react'
 import { JokeCard } from './components/JokeCard'
+import { jokes, categories } from './data/jokes';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => 
     window.matchMedia('(prefers-color-scheme: dark)').matches
   );
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const [currentJoke, setCurrentJoke] = useState<Joke | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [currentJoke, setCurrentJoke] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [usedJokes, setUsedJokes] = useState<Set<string>>(new Set());
+  const [usedJokes, setUsedJokes] = useState(new Set());
 
   useEffect(() => {
     if (darkMode) {
