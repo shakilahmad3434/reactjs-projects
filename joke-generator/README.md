@@ -1,8 +1,17 @@
-# React + Vite
+# Joke Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Joke Generator project! This project is a fun and interactive way to generate and share jokes across various categories.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Category Selection**: Choose from different joke categories such as Science Jokes, Math Jokes, etc.
+- **Joke Generation**: Generate a random joke from the selected category.
+- **Rating System**: Rate the jokes to help improve the generator.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Accessibility**: Includes features for accessibility such as text-to-speech and adjustable text size.
+
+## Screenshot
+
+![Joke Generator Screenshot](./public/joke-generator.png)
+
+Enjoy laughing with the **Joke Generator**! 😆🚀
