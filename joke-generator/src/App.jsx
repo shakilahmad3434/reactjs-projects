@@ -79,6 +79,7 @@ function App() {
   };
 
   const handleSpeak = () => {
+    console.log(currentJoke)
     if (currentJoke && 'speechSynthesis' in window) {
       const utterance = new SpeechSynthesisUtterance(
         currentJoke.answer 
