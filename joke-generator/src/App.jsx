@@ -97,16 +97,7 @@ function App() {
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
             Joke Generator
           </h1>
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-lg bg-white dark:bg-gray-800 shadow-md"
-          >
-            {darkMode ? (
-              <Sun className="w-6 h-6 text-yellow-500" />
-            ) : (
-              <Moon className="w-6 h-6 text-gray-600" />
-            )}
-          </button>
+
         </div>
 
         <div className="space-y-6">
