@@ -23,7 +23,7 @@ export default function CategorySelection({ categories, onSelect }) {
           <button
             key={category.id}
             onClick={() => onSelect(category.id)}
-            className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-4"
+            className="p-6 bg-white hover:bg-gray-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center space-y-4 cursor-pointer"
           >
             <Icon className="w-12 h-12 text-indigo-600" />
             <h3 className="text-xl font-semibold text-gray-800">{category.name}</h3>
