@@ -6,7 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const { toast } = useToast();
-  const [location, setLocation] = useState("London");
+  const [location, setLocation] = useState("Mumbai");
 
   // Mockup data for demonstration
   const weatherData = {
