@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { categories, questions } from './data';
+import { categories, questions } from './data/data';
 import CategorySelection from './components/CategorySelection';
 import Quiz from './components/Quiz';
 import Results from './components/Results';
