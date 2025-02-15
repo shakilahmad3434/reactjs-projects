@@ -1,10 +1,17 @@
 import React from 'react';
-import { Cpu, FlaskConical, Landmark } from 'lucide-react';
+import { Book, Clapperboard, Cpu, FlaskConical, ForkKnife, Globe, Landmark, Music, Palette, Volleyball, } from 'lucide-react';
 
 const iconMap = {
   Cpu: Cpu,
   Flask: FlaskConical,
   Landmark: Landmark,
+  Globe: Globe,
+  Soccer: Volleyball,
+  Movie: Clapperboard,
+  Book: Book,
+  Palette: Palette,
+  Music: Music,
+  ForkKnife: ForkKnife
 };
 
 export default function CategorySelection({ categories, onSelect }) {

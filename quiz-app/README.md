@@ -1,6 +1,8 @@
 # QuizMaster - Interactive Quiz Application
 
-![QuizMaster](https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=2000&h=600)
+![First Quiz Preview](./public/first.png)
+![Second Quiz Preview](./public/second.png)
+![Third Quiz Preview](./public/third.png)
 
 ## 🚀 Overview
 
