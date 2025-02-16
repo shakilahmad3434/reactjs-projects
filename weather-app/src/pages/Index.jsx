@@ -25,29 +25,34 @@ const Index = () => {
   const fetchWeatherData = async () => {
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=5&aqi=no`
+        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=5&aqi=no&alerts=no`
       );
       if (!response.ok) {
         throw new Error('Failed to fetch weather data');
       }
       const data = await response.json();
 
+      // Extract current weather and forecast data
+      const currentWeather = {
+        temperature: data.current.temp_c,
+        humidity: data.current.humidity,
+        windSpeed: data.current.wind_kph,
+        feelsLike: data.current.feelslike_c,
+        condition: data.current.condition.text,
+      };
+
+      const forecastData = data.forecast.forecastday.map((day) => ({
+        date: day.date,
+        temperature: day.day.avgtemp_c,
+        condition: day.day.condition.text,
+        humidity: day.day.avghumidity,
+        windSpeed: day.day.maxwind_kph,
+      }));
+
       // Update state with fetched data
       setWeatherData({
-        current: {
-          temperature: data.current.temp_c,
-          humidity: data.current.humidity,
-          windSpeed: data.current.wind_kph,
-          feelsLike: data.current.feelslike_c,
-          condition: data.current.condition.text,
-        },
-        forecast: data.forecast.forecastday.map((day) => ({
-          date: day.date,
-          temperature: day.day.avgtemp_c,
-          condition: day.day.condition.text,
-          humidity: day.day.avghumidity,
-          windSpeed: day.day.maxwind_kph,
-        })),
+        current: currentWeather,
+        forecast: forecastData,
       });
     } catch (error) {
       console.error(error);
