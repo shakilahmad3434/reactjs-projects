@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 import WeatherCard from '@/components/WeatherCard';
 import WeatherDetails from '@/components/WeatherDetails';
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const API_KEY = '42704489c98141a4a6f172729242811'
   const { toast } = useToast();
-  const [location, setLocation] = useState("Mumbai");
+  const [location, setLocation] = useState("Delhi");
 
   // Mockup data for demonstration
   const weatherData = {
@@ -26,8 +27,27 @@ const Index = () => {
     ],
   };
 
+  const handleWeatherLocation = () => {
+      fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`)
+      .then(res => res.json())
+      .then(data => {
+        weatherData.current.temperature = data.current.temp_c;
+        weatherData.current.humidity = data.current.humidity;
+        weatherData.current.windSpeed = data.current.wind_kph;
+        weatherData.current.feelsLike = data.current.feelslike_c;
+        weatherData.forecast[0].temperature = data.current.temp_c;
+        weatherData.forecast[0].condition = data.current.condition.text;
+        weatherData.forecast[0].humidity = data.current.humidity;
+        weatherData.forecast[0].windSpeed = data.current.wind_kph;
+  })
+      .catch(err => console.log(err))
+  }
+
+  useEffect(() => {
+    handleWeatherLocation()
+  }, [])
+
   const handleSearch = (query) => {
-    console.log(query)
     setLocation(query);
     toast({
       title: "Location Updated",
