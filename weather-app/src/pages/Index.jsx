@@ -27,6 +27,7 @@ const Index = () => {
   };
 
   const handleSearch = (query) => {
+    console.log(query)
     setLocation(query);
     toast({
       title: "Location Updated",
